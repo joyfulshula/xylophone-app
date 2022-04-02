@@ -7,6 +7,11 @@ void main() => runApp(XylophoneApp());
 
 class XylophoneApp extends StatelessWidget {
   @override
+  void sound(int soundNumber) {
+    final player = AudioCache();
+    player.play('note$soundNumber.wav');
+  }
+
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
@@ -16,10 +21,8 @@ class XylophoneApp extends StatelessWidget {
               FlatButton(
                 color: Colors.black,
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note1.wav');
+                  
                 },
-                child: Text(''),
               ),
               FlatButton(
                 color: Colors.yellowAccent,
