@@ -21,56 +21,51 @@ class XylophoneApp extends StatelessWidget {
               FlatButton(
                 color: Colors.black,
                 onPressed: () {
-                  
+                  sound(1);
                 },
+                child: Text(""),
               ),
               FlatButton(
                 color: Colors.yellowAccent,
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note2.wav');
+                  sound(2);
                 },
-                child: Text(''),
+                child: Text(""),
               ),
               FlatButton(
                 color: Colors.green,
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note3.wav');
+                  sound(3);
                 },
-                child: Text(''),
+                child: Text(""),
               ),
               FlatButton(
                 color: Colors.orangeAccent,
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note4.wav');
+                  sound(4);
                 },
-                child: Text(''),
+                child: Text(""),
               ),
               FlatButton(
                 color: Colors.blue,
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note5.wav');
+                  sound(5);
                 },
-                child: Text(''),
+                child: Text(""),
               ),
               FlatButton(
                 color: Colors.red,
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note6.wav');
+                  sound(6);
                 },
-                child: Text(''),
+                child: Text(""),
               ),
               FlatButton(
                 color: Colors.purple,
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note7.wav');
+                  sound(7);
                 },
-                child: Text(''),
+                child: Text(""),
               ),
             ],
           ),
